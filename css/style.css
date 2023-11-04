@@ -7,5 +7,35 @@ header {
     width: 100%;
     background-color: lightcoral;
     color: aquamarine;
-    height: 60px;
+    height: 40px;
+}
+main{
+    background-color: black;
+    height: calc(100vh - 40px );
+}
+.container {
+    max-width: 1390px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+
+.box {
+    width: 180px;
+    height: 120px;
+    background-color: red;
+    border: 2px dashed yellow;
+    margin-left: 10px;
+    margin-bottom: 4px;
+  
+}
+footer{
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+    color: aquamarine;
+    height: 60px; 
 }
