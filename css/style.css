@@ -3,35 +3,65 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 header {
     width: 100%;
-    background-color: lightcoral;
+    background-color: black;
     color: aquamarine;
-    height: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+.view{
+    background-color:rgba(213, 209, 209, 0.42);
+    color:white;
+    padding: 6px;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 5px;
+    margin-right: 6px;
+    margin-top:5px
 }
 main{
     background-color: black;
-    height: calc(100vh - 40px );
+    height: calc(100vh - 30px - 60px);
+    overflow: scroll;
 }
 .container {
     max-width: 1390px;
     margin: 0 auto;
     padding: 20px;
-    height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    overflow: scroll;
+    justify-content: center;
 }
 
 
 .box {
-    width: 180px;
+    width: 200px;
     height: 120px;
-    background-color: red;
-    border: 2px dashed yellow;
-    margin-left: 10px;
-    margin-bottom: 4px;
-  
+    /*background-color: red;
+    border: 2px dashed yellow;*/
+    margin-left: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box .name{
+    color: white;
+    background-color: rgba(177, 170, 170, 0.796);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
 }
 footer{
     width: 100%;
